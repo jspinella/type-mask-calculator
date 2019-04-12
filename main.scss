@@ -1,0 +1,310 @@
+/* 
+   Jatsby Framework v1.2.5
+   Released October 22, 2014 
+    under the MIT License
+   Updated March 25, 2015
+   Copyright 2015 Jatsby 
+   https://jatsby.com/
+*/
+
+
+
+/*==================================*/
+/*             Imports              */
+/*==================================*/
+/* Import fonts, CSS files here     */
+/*==================================*/
+
+@charset "UTF-8";
+
+/* Aileron 100-900; normal, italic */
+@import url("fonts/aileron.css");
+
+/* Bebas Neue 100, 200, 300, 400, 600; normal */
+@import url("fonts/bebasNeue.css");
+
+/* Lobster 400; normal */
+@import url("https://fonts.googleapis.com/css?family=Lobster");
+
+/* Lato 100, 300, 400, 700, 900; normal, italic */
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic");
+
+/* Mohave 400, 600, 700; normal, italic */
+@import url("fonts/mohave.css");
+
+/* Montserrat 400, 700; normal */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+
+/* Simplifica 400; normal */
+@import url("fonts/simplifica.css");
+
+/* Source Sans Pro 200-400, 600, 700, 900; normal, italic */
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic");
+
+
+/*==================================*/
+/*             Colors               */
+/*==================================*/
+/* Variable declarations for the    */
+/* Jatsby color palette	            */
+/*==================================*/
+
+$jatsbyRed: #EB575A;
+$jatsbyOrange: #EB955C;
+$jatsbyYellow: #EDDE66;
+$jatsbyGreen: #79E3A8;
+$jatsbyBlue: #74D7C7;
+$jatsbyPurple: #DE83DA;
+$jatsbyWhite: #F9F9F9;
+$jatsbyBlack: #626262;
+
+
+/*==================================*/
+/*              Reset               */
+/*==================================*/
+/* Simple reset parameters          */
+/* Also for custom global           */
+/*  declarations                    */
+/* (ie, ".roboto" for               */
+/*  font-family:Roboto;)            */
+/*==================================*/
+
+*	{
+	padding:0;
+	margin:0 auto;
+	-webkit-font-smoothing:antialiased;
+	-webkit-text-size-adjust: 100%;
+	text-rendering: geometricPrecision;
+	text-decoration: none;
+	color:inherit;
+	line-height: normal;
+	/* Responsive Transition Effects */
+	-webkit-transition-duration:0.2s;
+	-webkit-transform: rotate3d(0,0,0);
+	-moz-transition-duration: 0.2s;
+	-moz-transform: rotate3d(0,0,0);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+}
+
+html	{
+	background-color: #454545;
+	height: 99%;
+}
+
+
+/*==================================*/
+/*          320 Breakpoint          */
+/*==================================*/
+/* 600px- 899px                     */
+/* For tablets in portrait          */
+/* iPad, Nexus 7, Nexus 10          */
+/*==================================*/
+@media (min-width: 320px)           {	
+/*==================================*/
+
+.page-container {
+
+}
+
+.page-title {
+	padding: 1vw;
+	color: $jatsbyWhite;
+	font-family: 'Montserrat';
+	font-size: 2vw;
+	background-color: $jatsbyBlue;
+	text-align: center;
+	margin-bottom: 3vw;
+}
+
+.binary-final {
+	text-align: center;
+	padding: 2vw 0vw;
+	font-size: 10vw;
+	font-family: 'Bebas Neue';
+	color: $jatsbyWhite;
+	border-bottom: 0.0vw solid #303030;
+	width: intrinsic;
+	margin-top: 2vw;
+}
+		
+.binary-container {
+	margin-top: 1vw;
+	position: relative;
+	width: 95%;
+	text-align: center;
+}
+
+.binary-block {
+	width: 5.88%;
+	display: block;
+	position: relative;
+	float: left;
+	height: 9vw;
+	padding-top: 2vw;
+	cursor: pointer;
+}
+
+.binary-block:hover > .binary-line {
+	background-color: $jatsbyBlue;
+}
+
+.binary-line-active {
+	background-color: $jatsbyBlue !important;	
+}
+
+.binary-block:hover > .binary-label {
+	font-weight: 700;
+}
+
+.binary-value {
+	font-family: 'Bebas Neue';
+	color: $jatsbyWhite;
+	font-size: 4vw;
+	line-height: 0.95em;
+}
+
+.binary-line {
+	width: 85%;
+	height: 0.3vw;
+	background-color: $jatsbyWhite;
+}
+
+.binary-label {
+	text-align: center;
+	width: 100%;
+	color: $jatsbyWhite;
+	font-family: 'Bebas Neue';
+	font-size: 1.9vw;
+	line-height: 1.5em;
+}
+
+.binary-affect {
+	-webkit-transform: rotate(-270deg);
+	margin-top: 5em;
+	color: #666666;
+	font-family: 'Montserrat';
+	font-size: 1.5vw;
+	line-height: 1.75vw;
+	margin-left: -4.65vw;
+	width: 15vw;
+	text-align: left;
+}
+
+.binary-affect-active {
+	color: white !important;
+}
+
+
+/* APN Buttons */
+
+/* Fixes APN Buttons to bottom of viewport */
+.apn-position-container {
+	position: absolute;
+	bottom: 4em;
+	width: 100%;
+}
+
+/* Centers APN Buttons horizontally */
+.apn-button-container {
+	position: relative;
+	margin: 0 auto;
+	width: intrinsic;
+}
+
+.apn-button {
+	width: intrinsic;
+	height: 4.5vw;
+	display: block;
+	float: left;
+	background-color: #707070;
+	margin: 0.8vw;
+	border-left: 0.3vw solid $jatsbyWhite;
+	color: #303030;	
+	cursor: pointer;
+}
+
+.apn-button:hover {
+	background-color: #808080;
+}
+
+.apn-button:hover > .apn-value {
+	border-left: 0.3vw solid #808080;
+}
+
+.apn-info-container {
+	float: left;
+}
+
+.apn-name {
+	font-size: 2vw;
+	font-family: 'Montserrat';
+	padding: 0 1vw;
+	line-height: 3vw;
+}
+
+.apn-math {
+	font-size: 1.5vw;
+	font-family: 'Montserrat';
+	padding: 0 1vw;
+	line-height: 1vw;
+}
+
+.apn-value {
+	float: right;
+	border-left: 0.35vw solid #707070;
+	font-size: 3.5vw;
+	font-family: 'Bebas Neue';
+	padding: 0.25vw 0.8vw;
+	margin: 1vw 0;
+	line-height: 2.4vw;
+}
+
+.apn-button-active {
+	border-left: 0;
+	background-color: $jatsbyBlue;
+}
+
+/* overrides .apn-button:hover */
+.apn-button-active:hover {
+	border-left: 0;
+	background-color: $jatsbyBlue;
+}
+
+.apn-button-active > .apn-value {
+	border-left: 0.3vw solid $jatsbyWhite !important;
+}
+
+.footer {
+	position: absolute;
+	bottom: 1vw;
+	left: 1vw;
+	font-family: 'Lobster';
+	color: #292929;
+	font-size: 2vw;
+}
+
+}/*=================================*/
+/*          900 Breakpoint          */
+/*==================================*/
+/* 900px- 1024px                    */
+/* For tablets in landscape         */
+/* iPad, Nexus 7+10, Surface Pro    */
+/*==================================*/
+@media (min-width: 900px)           {
+/*==================================*/
+
+
+
+}/*=================================*/
+/*         1025 Breakpoint          */
+/*==================================*/
+/* 1025px+                          */
+/* For full-size computers          */
+/* MacBook Pro, iMac, 2015 MacBook  */
+/*==================================*/
+@media (min-width: 1025px)          {
+/*==================================*/
+
+
+}

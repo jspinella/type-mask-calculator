@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+	<!--
+	Jatsby Framework v1.2.5
+	Released October 22, 2014 
+	 under the MIT License
+	Updated March 25, 2015
+	Copyright 2015 Jatsby 
+	https://jatsby.com/
+	--> 
+
+
+<head>
+	<title>Type Mask Calculator - Verizon</title>
+	<!-- Stylesheets -->
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<!-- Scripts -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="main.js"></script>
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="favicon.png"/>
+	<!-- Meta / SEO -->
+	<meta name="description" content="The CSS framework for trying new things!">
+	<meta name="keywords" content="jatsby, web, website, framework, html5, pure, css, wekbit, safari, chrome, firefox">
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">	
+</head>
+
+
+<div class="page-container">
+	
+
+	<!-- Binary Final (Value) -->
+	<div class="binary-final" id="binary-final">0</div>
+
+
+	<!-- Binary Block -->
+	<div class="binary-container">
+		<div class="binary-block" id="block-65536">
+			<div class="binary-value" id="bival-65536">0</div>
+			<div class="binary-line" id="binary-line-65536"></div>
+			<div class="binary-label">65,536</div>
+			<div class="binary-affect"></div>
+		</div>
+		<div class="binary-block" id="block-32768">
+			<div class="binary-value" id="bival-32768">0</div>
+			<div class="binary-line" id="binary-line-32768"></div>
+			<div class="binary-label">32,768</div>
+			<div class="binary-affect"></div>
+		</div>
+		<div class="binary-block" id="block-16384">
+			<div class="binary-value" id="bival-16384">0</div>
+			<div class="binary-line" id="binary-line-16384"></div>
+			<div class="binary-label">16,384</div>
+			<div class="binary-affect"></div>
+		</div>
+		<div class="binary-block" id="block-8192">
+			<div class="binary-value" id="bival-8192">0</div>
+			<div class="binary-line" id="binary-line-8192"></div>
+			<div class="binary-label">8,192</div>
+			<div class="binary-affect"></div>
+		</div>
+		<div class="binary-block" id="block-4096">
+			<div class="binary-value" id="bival-4096">0</div>
+			<div class="binary-line" id="binary-line-4096"></div>
+			<div class="binary-label">4,096</div>
+			<div class="binary-affect"></div>
+		</div>
+		<div class="binary-block" id="block-2048">
+			<div class="binary-value" id="bival-2048">0</div>
+			<div class="binary-line" id="binary-line-2048"></div>
+			<div class="binary-label">2,048</div>
+			<div class="binary-affect"></div>
+		</div>
+		<div class="binary-block" id="block-1024">
+			<div class="binary-value" id="bival-1024">0</div>
+			<div class="binary-line" id="binary-line-1024"></div>
+			<div class="binary-label">1,024</div>
+			<div class="binary-affect"></div>
+		</div>
+		<div class="binary-block" id="block-512">
+			<div class="binary-value" id="bival-512">0</div>
+			<div class="binary-line" id="binary-line-512"></div>
+			<div class="binary-label">512</div>
+			<div class="binary-affect"></div>
+		</div>
+		<div class="binary-block" id="block-256">
+			<div class="binary-value" id="bival-256">0</div>
+			<div class="binary-line" id="binary-line-256"></div>
+			<div class="binary-label">256</div>
+			<div class="binary-affect" id="binary-affect-256"></div>
+		</div>
+		<div class="binary-block" id="block-128">
+			<div class="binary-value" id="bival-128">0</div>
+			<div class="binary-line" id="binary-line-128"></div>
+			<div class="binary-label">128</div>
+			<div class="binary-affect" id="binary-affect-128"></div>
+		</div>
+		<div class="binary-block" id="block-64">
+			<div class="binary-value" id="bival-64">0</div>
+			<div class="binary-line" id="binary-line-64"></div>
+			<div class="binary-label">64</div>
+			<div class="binary-affect" id="binary-affect-64"></div>
+		</div>
+		<div class="binary-block" id="block-32">
+			<div class="binary-value" id="bival-32">0</div>
+			<div class="binary-line" id="binary-line-32"></div>
+			<div class="binary-label">32</div>
+			<div class="binary-affect" id="binary-affect-32"></div>
+		</div>
+		<!-- 16 -->
+		<div class="binary-block" id="block-16">
+			<div class="binary-value" id="bival-16">0</div>
+			<div class="binary-line" id="binary-line-16"></div>
+			<div class="binary-label">16</div>
+			<div class="binary-affect" id="binary-affect-16"></div>
+		</div>
+		<!-- 8 -->
+		<div class="binary-block" id="block-8">
+			<div class="binary-value" id="bival-8">0</div>
+			<div class="binary-line" id="binary-line-8"></div>
+			<div class="binary-label">8</div>
+			<div class="binary-affect" id="binary-affect-8"></div>
+		</div>
+		<!-- 4 -->
+		<div class="binary-block" id="block-4">
+			<div class="binary-value" id="bival-4">0</div>
+			<div class="binary-line" id="binary-line-4"></div>
+			<div class="binary-label">4</div>
+			<div class="binary-affect" id="binary-affect-4">MMS</div>
+		</div>
+		<!-- 2 -->
+		<div class="binary-block" id="block-2">
+			<div class="binary-value" id="bival-2">0</div>
+			<div class="binary-line" id="binary-line-2"></div>
+			<div class="binary-label">2</div>
+			<div class="binary-affect" id="binary-affect-2"></div>
+		</div>
+		<!-- 1 -->
+		<div class="binary-block" id="block-1">
+			<div class="binary-value" id="bival-1">0</div>
+			<div class="binary-line" id="binary-line-1"></div>
+			<div class="binary-label">1</div>
+			<div class="binary-affect" id="binary-affect-1"></div>
+		</div>
+	</div>
+	
+	
+	<div class="apn-position-container">
+		<!-- APN Buttons -->
+		<div class="apn-button-container">
+			<div class="apn-button" id="button-vzwinternet">
+				<div class="apn-info-container">
+					<div class="apn-name">vzwinternet</div>
+					<div class="apn-math">Item 0 / Item 1</div>
+				</div>
+				<div class="apn-value">19</div>
+			</div>
+			<div class="apn-button" id="button-vzwapp">
+				<div class="apn-info-container">
+					<div class="apn-name">vzwapp</div>
+					<div class="apn-math">Item 0 &#10132; Item 1</div>
+				</div>
+				<div class="apn-value">32,772</div>
+			</div>
+			<div class="apn-button" id="button-vzwapp2">
+				<div class="apn-info-container">
+					<div class="apn-name">vzwapp</div>
+					<div class="apn-math">Item 1 &#10132; Item 1</div>
+				</div>
+				<div class="apn-value">49,156</div>
+			</div>
+			<div class="apn-button" id="button-vzwadmin">
+				<div class="apn-info-container">
+					<div class="apn-name">vzwadmin</div>
+					<div class="apn-math">Item 1 &#10132; Item 2</div>
+				</div>
+				<div class="apn-value">512</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="footer"><a href="http://jatsby.com">Jatsby</a></div>
+	
+</div>
+
+
+<!-- Google Analytics -->
+<script>	
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-42028803-1', 'auto');
+  ga('send', 'pageview'); 
+</script>
