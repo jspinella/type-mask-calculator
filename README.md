@@ -17,3 +17,5 @@ _ _
 2 1
 
 iOS determines the cellular/carrier features it should enable, like MMS and Portable Hotspot, based on the type-mask value in the current carrier's carrier bundle. Since it is based in binary, the only way you can get a certain value, say 32,772, is by setting very particular options to "true" or "enabled". There is only one combination of ffeatures that will give me 32,772 for the type-mask value, and therefore iOS can translate that to determine which features should be enabled.
+
+#### At the moment, the values for vzwinternet, etc. are from *2014*. I haven't touched this project since 2014, and have only put it up here since a reddit guide links to it and people have recently shown interest in it. Please, if you find this information is out of date, feel free to let me know/submit a pull request.
