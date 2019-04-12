@@ -4,7 +4,7 @@ Type Mask Calculator for iOS Carrier Bundles
 This is a helpful web app that allows one to easily experiment with type-mask values, which are derived from binary (values being true or false). It's helpful to know what binary is, but the gist is that the value of type-mask in an iOS carrier bundle is the total number of "enabled" options/values/features (as denoted by the value "1").
 
 
-1 1
+1 1  
 _ _  
 2 1
 
@@ -12,7 +12,7 @@ Imagine having two light switches. One for your living room, and one for your di
 
 If one of the lights is off, your "type-mask" value would be 1 or 2, depending on the light that is off"
 
-1 0
+1 0  
 _ _  
 2 1
 
